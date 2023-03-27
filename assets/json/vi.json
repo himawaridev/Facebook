@@ -1,0 +1,9 @@
+{
+    "header": {
+        "home"      : "Trang chủ",
+        "introduce" : "Giới Thiệu",
+        "product"   : "Sản Phẩm",
+        "service"   : "Dịch Vụ",
+        "contact"   : "Liên Hệ" 
+    }
+}

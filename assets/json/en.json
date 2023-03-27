@@ -1,0 +1,12 @@
+{
+	"vi": {
+		"hello": "Xin chào, Thế giới!",
+		"thankyou": "Cảm ơn bạn đã ghé thăm trang web của chúng tôi.",
+		"switch": "Switch Language"
+	},
+	"en": {
+		"hello": "Hello, World!",
+		"thankyou": "Thank you for visiting our website.",
+		"switch": "Đổi ngôn ngữ"
+	}
+}

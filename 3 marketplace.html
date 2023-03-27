@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Marketplace | Facebook</title>
+    <link rel="stylesheet" href="assets/css/3 marketplace.css">
+    <link rel="icon" href="assets/image/logo-facebook.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body id="body">
+    <div class="wrapper-title">
+        <div class="wrapper-title-left">
+            <div class="wrapper-title-left-image">
+                <img src="assets/image/logo-facebook.png" alt="No image" class="image-left">
+            </div>
+            <!-- <div class="type">
+                <i class="bi bi-search type-search"></i>
+                <input type="text" placeholder="Tìm kiếm trên facebook" class="search" name="text" value="">
+            </div> -->
+            <div class="container-search-two">
+                <input placeholder="Tìm kiếm trên facebook" required="" class="input" name="text" type="text">
+                <div class="icon-search-two">
+                    <i class="bi bi-search"></i>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-title-center">
+            <div class="box-svg" onclick="handleClick(1)">
+                <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6" fill="currentColor"
+                    height="28" width="28">
+                    <path
+                        d="M17.5 23.979 21.25 23.979C21.386 23.979 21.5 23.864 21.5 23.729L21.5 13.979C21.5 13.427 21.949 12.979 22.5 12.979L24.33 12.979 14.017 4.046 3.672 12.979 5.5 12.979C6.052 12.979 6.5 13.427 6.5 13.979L6.5 23.729C6.5 23.864 6.615 23.979 6.75 23.979L10.5 23.979 10.5 17.729C10.5 17.04 11.061 16.479 11.75 16.479L16.25 16.479C16.939 16.479 17.5 17.04 17.5 17.729L17.5 23.979ZM21.25 25.479 17 25.479C16.448 25.479 16 25.031 16 24.479L16 18.327C16 18.135 15.844 17.979 15.652 17.979L12.348 17.979C12.156 17.979 12 18.135 12 18.327L12 24.479C12 25.031 11.552 25.479 11 25.479L6.75 25.479C5.784 25.479 5 24.695 5 23.729L5 14.479 3.069 14.479C2.567 14.479 2.079 14.215 1.868 13.759 1.63 13.245 1.757 12.658 2.175 12.29L13.001 2.912C13.248 2.675 13.608 2.527 13.989 2.521 14.392 2.527 14.753 2.675 15.027 2.937L25.821 12.286C25.823 12.288 25.824 12.289 25.825 12.29 26.244 12.658 26.371 13.245 26.133 13.759 25.921 14.215 25.434 14.479 24.931 14.479L23 14.479 23 23.729C23 24.695 22.217 25.479 21.25 25.479Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="box-svg" onclick="handleClick(2)">
+                <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6" fill="currentColor"
+                    height="28" width="28">
+                    <path
+                        d="M8.75 25.25C8.336 25.25 8 24.914 8 24.5 8 24.086 8.336 23.75 8.75 23.75L19.25 23.75C19.664 23.75 20 24.086 20 24.5 20 24.914 19.664 25.25 19.25 25.25L8.75 25.25ZM17.163 12.846 12.055 15.923C11.591 16.202 11 15.869 11 15.327L11 9.172C11 8.631 11.591 8.297 12.055 8.576L17.163 11.654C17.612 11.924 17.612 12.575 17.163 12.846ZM21.75 20.25C22.992 20.25 24 19.242 24 18L24 6.5C24 5.258 22.992 4.25 21.75 4.25L6.25 4.25C5.008 4.25 4 5.258 4 6.5L4 18C4 19.242 5.008 20.25 6.25 20.25L21.75 20.25ZM21.75 21.75 6.25 21.75C4.179 21.75 2.5 20.071 2.5 18L2.5 6.5C2.5 4.429 4.179 2.75 6.25 2.75L21.75 2.75C23.821 2.75 25.5 4.429 25.5 6.5L25.5 18C25.5 20.071 23.821 21.75 21.75 21.75Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="box-svg-click" onclick="handleClick(3)">
+                <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x5e5rjt" fill="currentColor"
+                    height="28" width="28">
+                    <path
+                        d="m10.995,23.625l0,-5.8c0,-0.526 0.424,-0.95 0.95,-0.95l4.09,0c0.526,0 0.95,0.424 0.95,0.95l0,5.8l4.98,0c0.43,0 0.78,-0.348 0.78,-0.78l0,-8.264c-0.124,-0.073 -0.242,-0.159 -0.35,-0.256l-0.41,-0.37c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.17,0.15c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.23,0c-0.71,0 -1.41,-0.26 -1.96,-0.75l-0.19,-0.17c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.19,0.17c-0.55,0.49 -1.25,0.76 -1.96,0.76l-0.14,0c-0.71,0 -1.4,-0.26 -1.94,-0.74l-0.22,-0.19c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.18,0.16c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.18,0c-0.72,0 -1.41,-0.26 -1.96,-0.75l-0.2,-0.17c-0.18,-0.17 -0.44,-0.17 -0.63,0l-0.48,0.43c-0.076,0.067 -0.156,0.129 -0.24,0.183l0,8.287c0,0.43 0.348,0.78 0.78,0.78l4.96,0zm13.25,-8.795l0,8.015c0,1.262 -1.023,2.28 -2.28,2.28l-15.93,0c-1.262,0 -2.28,-1.023 -2.28,-2.28l0,-7.989c-0.993,-0.139 -1.76,-1.038 -1.76,-2.131l0,-2.35c0,-0.28 0.22,-0.5 0.5,-0.5l23.01,0c0.28,0 0.5,0.22 0.5,0.5l0,2.18c0,1.124 -0.756,2.063 -1.76,2.275zm0.71,-5.955l-21.93,0c-0.35,0 -0.59,-0.36 -0.46,-0.69l1.82,-4.49c0.19,-0.49 0.65,-0.82 1.17,-0.82l16.87,0c0.52,0 0.98,0.33 1.17,0.83l1.82,4.48c0.14,0.33 -0.11,0.69 -0.46,0.69z">
+                    </path>
+                </svg>
+            </div>
+            <div class="box-svg" onclick="handleClick(4)">
+                <svg viewBox="0 0 28 28" class="wrapper-title-center-icon" width="28" height="28" fill="currentColor">
+                    <path
+                        d="M25.5 14C25.5 7.649 20.351 2.5 14 2.5 7.649 2.5 2.5 7.649 2.5 14 2.5 20.351 7.649 25.5 14 25.5 20.351 25.5 25.5 20.351 25.5 14ZM27 14C27 21.18 21.18 27 14 27 6.82 27 1 21.18 1 14 1 6.82 6.82 1 14 1 21.18 1 27 6.82 27 14ZM7.479 14 7.631 14C7.933 14 8.102 14.338 7.934 14.591 7.334 15.491 6.983 16.568 6.983 17.724L6.983 18.221C6.983 18.342 6.99 18.461 7.004 18.578 7.03 18.802 6.862 19 6.637 19L6.123 19C5.228 19 4.5 18.25 4.5 17.327 4.5 15.492 5.727 14 7.479 14ZM20.521 14C22.274 14 23.5 15.492 23.5 17.327 23.5 18.25 22.772 19 21.878 19L21.364 19C21.139 19 20.97 18.802 20.997 18.578 21.01 18.461 21.017 18.342 21.017 18.221L21.017 17.724C21.017 16.568 20.667 15.491 20.067 14.591 19.899 14.338 20.067 14 20.369 14L20.521 14ZM8.25 13C7.147 13 6.25 11.991 6.25 10.75 6.25 9.384 7.035 8.5 8.25 8.5 9.465 8.5 10.25 9.384 10.25 10.75 10.25 11.991 9.353 13 8.25 13ZM19.75 13C18.647 13 17.75 11.991 17.75 10.75 17.75 9.384 18.535 8.5 19.75 8.5 20.965 8.5 21.75 9.384 21.75 10.75 21.75 11.991 20.853 13 19.75 13ZM15.172 13.5C17.558 13.5 19.5 15.395 19.5 17.724L19.5 18.221C19.5 19.202 18.683 20 17.677 20L10.323 20C9.317 20 8.5 19.202 8.5 18.221L8.5 17.724C8.5 15.395 10.441 13.5 12.828 13.5L15.172 13.5ZM16.75 9C16.75 10.655 15.517 12 14 12 12.484 12 11.25 10.655 11.25 9 11.25 7.15 12.304 6 14 6 15.697 6 16.75 7.15 16.75 9Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="box-svg" onclick="handleClick(5)">
+                <svg fill="currentColor" viewBox="0 0 24 24" class="wrapper-title-center-icon" width="28" height="28"
+                    ss>
+                    <g fill-rule="evenodd" transform="translate(-444 -204)">
+                        <g>
+                            <path fill-rule="nonzero" d="M98.5 5.75v4a.75.75 0 1 0 1.5 0v-4a.75.75 0 1 0-1.5 0z"
+                                transform="translate(351.5 208.5)"></path>
+                            <path fill-rule="nonzero" d="M97.25 8.5h4a.75.75 0 1 0 0-1.5h-4a.75.75 0 1 0 0 1.5z"
+                                transform="translate(351.5 208.5)"></path>
+                            <path fill-rule="nonzero"
+                                d="M109.5 14.5h-10a7 7 0 0 1 0-14h10a7 7 0 0 1 0 14zm0-1.5a5.5 5.5 0 0 0 0-11h-10a5.5 5.5 0 0 0 0 11h10z"
+                                transform="translate(351.5 208.5)"></path>
+                            <path
+                                d="M109 9.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0m3-3a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0"
+                                transform="translate(351.5 208.5)"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="wrapper-title-right">
+            <div class="btn-group">
+                <button type="button" class="wrapper-title-right-dropdown btn" data-toggle="dropdown"><i
+                        class="bi bi-grid-3x3-gap-fill wrapper-title-right-icon"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-item-1">
+                    <div class="title-dropdown-item">Menu</div>
+                    <div class="all">
+                        <div class="all-in-left">
+                            <div class="type-1">
+                                <i class="bi bi-search"></i>
+                                <input type="text" class="search-1" placeholder="Tìm kiếm trên menu" value="">
+                            </div>
+                            <div class="write-title" style="color:white; margin: 15px 0px 10px 10px; font-weight: 600;">
+                                Xã hội</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/1.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Sự kiện</div>
+                                        <div class="write-2">Tổ chức hoặc tìm sự kiện cùng những hoạt động khác trên
+                                            mạng và
+                                            ở quanh đây.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/2.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Bạn </div>
+                                        <div class="write-2">Tìm kiếm bạn bè hoặc những người bạn có thể biết.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/3.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Nhóm</div>
+                                        <div class="write-2">Kết nối với những người cùng chung sở thích.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/4.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Bảng tin</div>
+                                        <div class="write-2">Xem bài viết phù hợp của những người và Trang bạn theo dõi.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/5.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Yêu thích</div>
+                                        <div class="write-2">View posts by Favorites</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/6.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Gần đây nhất</div>
+                                        <div class="write-2">Xem bài viết gần đây nhất từ bạn bè, nhóm, Trang và hơn thế
+                                            nữa.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/7.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Trang</div>
+                                        <div class="write-2">Khám phá và kết nối với các doanh nghiệp trên Facebook.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Giải trí</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/8.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Video chơi game</div>
+                                        <div class="write-2">Xem, kết nối với những game và người phát trực tiếp mà bạn
+                                            yêu thích.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/10.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Chơi game</div>
+                                        <div class="write-2">Chơi game bạn yêu thích.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/11.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Watch</div>
+                                        <div class="write-2">Đích đến của video phù hợp với sở thích và quan hệ kết nối
+                                            của bạn.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/12.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Video trực tiếp</div>
+                                        <div class="write-2">Xem video trực tiếp phổ biến từ khắp thế giới</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Mua sắm</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/13.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Facebook Pay</div>
+                                        <div class="write-2">Một cách dễ dàng, bảo mật để thanh toán trên các ứng dụng
+                                            bạn đang dùng.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/14.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Marketplace</div>
+                                        <div class="write-2">Mua bán trong cộng đồng của bạn.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Cá nhân</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/15.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Hoạt động quảng cáo gần đây</div>
+                                        <div class="write-2">Xem toàn bộ quảng cáo mà bạn đã tương tác trên Facebook.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/16.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Kỷ niệm</div>
+                                        <div class="write-2">Lướt xem ảnh, video và bài viết cũ của bạn trên Facebook.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/17.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Đã lưu</div>
+                                        <div class="write-2">Tìm bài viết, ảnh và video mà bạn đã lưu để xem sau.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Chuyên nghiệp</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/18.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Trình quản lý quảng cáo</div>
+                                        <div class="write-2">Tạo, quản lý và theo dõi hiệu quả quảng cáo.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Nguồn lực cho cộng đồng</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/19.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Hiến máu</div>
+                                        <div class="write-2">Cập nhật thông tin về hoạt động hiến máu ở gần bạn.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/20.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Trung tâm khoa học khí hậu</div>
+                                        <div class="write-2">Tìm hiểu về vấn đề biến đổi khí hậu và tác động của hiện
+                                            tượng này.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/21.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Ứng phó khẩn cấp</div>
+                                        <div class="write-2">Tìm thông tin mới nhất về các cuộc khủng hoảng đang diễn ra
+                                            trên thế giới.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/22.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Sức khỏe cảm xúc</div>
+                                        <!-- <div class="write-2">Xem video trực tiếp phổ biến từ khắp thế giới</div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/23.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Chiến dịch gây quỹ</div>
+                                        <div class="write-2">Quyên góp và gây quỹ cho tổ chức phi lợi nhuận và mục đích
+                                            cá nhân.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Sản phẩm khác của meta</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/24.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Messenger nhí</div>
+                                        <div class="write-2">Cho phép bé nhắn tin với bạn thân và gia đình.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-in-right">
+                            <div class="all-in-right-content-wrapper">
+                                <div class="all-in-right-content-write-title">Tạo</div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-file-earmark-post all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Đăng</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-camera-video-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Tin</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-book-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Phòng họp mặt</div>
+                                </div>
+                                <div class="all-in-right-line"
+                                    style="color:white; padding: 0px 0px 0px 0px; margin: 15px 0px 10px 10px; border-top: 1px solid #3E4042;">
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-flag-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Trang</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-megaphone-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Quảng cáo</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-person-circle all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Nhóm</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-calendar2-event-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Sự kiện</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-handbag-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Bài trên Marketplace</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="wrapper-title-right-dropdown btn" data-toggle="dropdown"><i
+                        class="bi bi-messenger wrapper-title-right-icon"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-item-2">
+                    <div class="dropdown-menu-item-2-title">
+                        <div class="dropdown-menu-item-2-title-left">Chat</div>
+                        <div class="dropdown-menu-item-2-title-right">
+                            <i class="bi bi-three-dots dropdown-menu-item-2-title-right-icon"></i>
+                            <i class="bi bi-arrows-fullscreen dropdown-menu-item-2-title-right-icon"></i>
+                            <i class="bi bi-camera-video-fill dropdown-menu-item-2-title-right-icon"></i>
+                            <i class="bi bi-file-earmark-post dropdown-menu-item-2-title-right-icon"></i>
+                        </div>
+                    </div>
+                    <div class="type-3">
+                        <i class="bi bi-search"></i>
+                        <input type="text" class="search-3" placeholder="Tìm kiếm trên messenger" value="">
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="wrapper-title-right-dropdown btn" data-toggle="dropdown"><i
+                        class="bi bi-bell-fill wrapper-title-right-icon"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-item-3">
+                    <div class="dropdown-menu-item-3-all">
+                        <div class="dropdown-menu-item-3-introduction">
+                            <div class="dropdown-menu-item-3-introduction-left">Thông báo</div>
+                            <div class="dropdown-menu-item-3-introduction-right"><i class="bi bi-three-dots"></i></div>
+                        </div>
+                        <div class="dropdown-menu-item-3-title">
+                            <div class="dropdown-menu-item-3-title-content-hover" onclick="click1()">Tất cả</div>
+                            <div class="dropdown-menu-item-3-title-content" onclick="click2()">Chưa đọc</div>
+                            <div class="dropdown-menu-item-3-title-content" onclick="click3()">Mức độ ưu tiên</div>
+                        </div>
+                        <div class="dropdown-menu-item-3-new-and-view-all">
+                            <div class="dropdown-menu-item-3-new">Mới</div>
+                            <div class="dropdown-menu-item-3-view-all">Xem tất cả</div>
+                        </div>
+                        <div class="dropdown-menu-item-3-all-content">
+                            <div id="page-1">
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/image-avatar.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-CS2 (CS:GO)</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/image-avatar.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-CS2 (CS:GO)</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/image-avatar.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-CS2 (CS:GO)</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/image-avatar.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-CS2 (CS:GO)</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/image-avatar.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-CS2 (CS:GO)</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/image-avatar.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-CS2 (CS:GO)</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/image-avatar.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-CS2 (CS:GO)</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/image-avatar.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-CS2 (CS:GO)</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/image-avatar.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-CS2 (CS:GO)</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="page-2">
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="page-3">
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/sexy-ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-confirm">
+                                            <div class="dropdown-menu-item-3-content-right-confirm-left">Xác nhận</div>
+                                            <div class="dropdown-menu-item-3-content-right-confirm-right">Xóa</div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/sexy-ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-confirm">
+                                            <div class="dropdown-menu-item-3-content-right-confirm-left">Xác nhận</div>
+                                            <div class="dropdown-menu-item-3-content-right-confirm-right">Xóa</div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/sexy-ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-confirm">
+                                            <div class="dropdown-menu-item-3-content-right-confirm-left">Xác nhận</div>
+                                            <div class="dropdown-menu-item-3-content-right-confirm-right">Xóa</div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/sexy-ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-confirm">
+                                            <div class="dropdown-menu-item-3-content-right-confirm-left">Xác nhận</div>
+                                            <div class="dropdown-menu-item-3-content-right-confirm-right">Xóa</div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/sexy-ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-confirm">
+                                            <div class="dropdown-menu-item-3-content-right-confirm-left">Xác nhận</div>
+                                            <div class="dropdown-menu-item-3-content-right-confirm-right">Xóa</div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-item-3-content">
+                                    <div class="dropdown-menu-item-3-content-left">
+                                        <img src="assets/image/sexy-ximer-dev.png" alt=""
+                                            class="dropdown-menu-item-3-content-left-image">
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-right">
+                                        <div class="dropdown-menu-item-3-content-right-write">
+                                            <strong style="font-size: 14px;">Sơn Nodoor</strong>
+                                            đã nhắc đến bạn ở một bình luận trong
+                                            <strong style="font-size: 14px;">VN-SEXY</strong>
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-time">
+                                            2 giờ trước
+                                        </div>
+                                        <div class="dropdown-menu-item-3-content-right-confirm">
+                                            <div class="dropdown-menu-item-3-content-right-confirm-left">Xác nhận</div>
+                                            <div class="dropdown-menu-item-3-content-right-confirm-right">Xóa</div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu-item-3-content-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot bi-dot-icon" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group-image">
+                <button type="button" class="wrapper-title-right-dropdown btn" data-toggle="dropdown">
+                    <img src="assets/image/profile.jpg" alt="error" class="image-right">
+                </button>
+                <div class="dropdown-menu dropdown-menu-item-4">
+                    <div class="dropdown-menu-item-4-all">
+                        <div class="dropdown-menu-item-4-title">
+                            <div class="dropdown-menu-item-4-left" onclick="handleClick(6)">
+                                <img src="assets/image/profile.jpg" alt="error" class="dropdown-menu-item-4-left-image">
+                                <div class="dropdown-menu-item-4-left-write">Ximer Dev</div>
+                            </div>
+                            <div class="dropdown-menu-item-4-right" onclick="handleClick(7)">
+                                <img src="assets/image/avatar.png" alt="error" class="dropdown-menu-item-4-right-image">
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="dropdown-menu-item-4-center">
+                            <div class="dropdown-menu-item-4-center-left">Xem tất cả trang cá nhân</div>
+                            <div class="dropdown-menu-item-4-center-right">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-4-menu">
+                        <div class="dropdown-menu-item-4-menu-content">
+                            <div class="dropdown-menu-item-4-menu-all">
+                                <img src="assets/image/icon-dropdown/1.png" alt="error"
+                                    class="dropdown-menu-item-4-menu-image">
+                            </div>
+                            <div class="dropdown-menu-item-4-menu-content-write">Cài đặt & quyền riêng tư</div>
+                        </div>
+                        <div class="dropdown-menu-item-4-menu-content">
+                            <div class="dropdown-menu-item-4-menu-all">
+                                <img src="assets/image/icon-dropdown/2.png" alt="error"
+                                    class="dropdown-menu-item-4-menu-image">
+                            </div>
+                            <div class="dropdown-menu-item-4-menu-content-write">Trợ giúp & hỗ trợ</div>
+                        </div>
+                        <div class="dropdown-menu-item-4-menu-content">
+                            <div class="dropdown-menu-item-4-menu-all">
+                                <img src="assets/image/icon-dropdown/3.png" alt="error"
+                                    class="dropdown-menu-item-4-menu-image">
+                            </div>
+                            <div class="dropdown-menu-item-4-menu-content-write">Màn hình & trợ sáng</div>
+                        </div>
+                        <div class="dropdown-menu-item-4-menu-content">
+                            <div class="dropdown-menu-item-4-menu-all">
+                                <img src="assets/image/icon-dropdown/4.png" alt="error"
+                                    class="dropdown-menu-item-4-menu-image">
+                            </div>
+                            <div class="dropdown-menu-item-4-menu-content-write">Đóng góp ý kiến</div>
+                        </div>
+                        <div class="dropdown-menu-item-4-menu-content" onclick="handleClick(8)">
+                            <div class="dropdown-menu-item-4-menu-all">
+                                <img src="assets/image/icon-dropdown/5.png" alt="error"
+                                    class="dropdown-menu-item-4-menu-image">
+                            </div>
+                            <div class="dropdown-menu-item-4-menu-content-write">Đăng xuất</div>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-4-footer">Quyền riêng tư · Điều khoản · Quảng cáo · Lựa chọn quảng
+                        cáo · Cookie · · Ximer © 2023</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-left">
+            <div class="menu-left-all-in">
+                <div class="menu-left-title">
+                    <div class="menu-left-title-left">
+                        Marketplace
+                    </div>
+                    <div class="menu-left-title-right">
+                        <i class="bi bi-gear-fill"></i>
+                    </div>
+                </div>
+                <div class="search-menu-left">
+                    <i class="bi bi-search search-menu-left-icon"></i>
+                    <input placeholder="Tìm kiếm video..." required="" class="menu-left-search" name="text" type="text">
+                </div>
+            </div>
+            <div class="menu-left-all">
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/1.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Lướt xem tất cả</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/2.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Thông báo</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/3.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Hộp thư</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/4.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Đang mua</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/5.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Bán hàng</div>
+                </div>
+                <div class="create-post">
+                    <i class="bi bi-plus-lg bi-plus-lg-icon"></i>
+                    <div class="create-post-write">Tạo bài niêm yết mới</div>
+                </div>
+                <div class="filter">
+                    <div class="filter-content">Bộ lọc</div>
+                    <div class="filter-write">Hà Nội · Trong vòng 65 km</div>
+                </div>
+                <div class="title-menu-shopping">Hạng mục</div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/6.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Xe cộ</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/7.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Tài sản cho thuê</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/7.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Bán nhà</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/8.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">ụng cụ sửa chữa nhà cửa</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/9.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">GIa đình</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/10.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Giải trí</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/11.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Làm vườn & hoạt động giải trí ngoài trời</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/12.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">NHạc cụ</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/5.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Rao vặt</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/13.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Sản phẩm miễn phí</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/14.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Sản phẩm thể thao</div>
+                </div>
+
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/15.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Sở thích</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/5.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Văn phòng phẩm</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/16.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Đồ chơi và trò chơi</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/17.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Đồ dùng cho thú cưng</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/18.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Đồ gia dụng</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/19.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Đồ may mặc</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/20.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Đồ điện tử</div>
+                </div>
+                <div class="menu-left-home">
+                    <div class="menu-left-home-left">
+                        <img src="assets/image/marketplace/21.png" alt="" class="menu-left-home-left-image">
+                    </div>
+                    <div class="menu-left-home-right">Nhóm và mua bán</div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-right">
+            <div class="menu-right-title">
+                <div class="menu-right-title-left">Hot today</div>
+                <div class="menu-right-title-right"><i class="bi bi-geo-alt-fill bi-geo-alt-fill-icon"></i> Ha noi · 65 km</div>
+            </div>
+            <div class="menu-right-all">
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/versace.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/supreme.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/chanel.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/gucci.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+            </div>
+            <div class="menu-right-all">
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/louis-vuitton.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/nike.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/mustang.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/mercedes.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+            </div>
+            <div class="menu-right-all">
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/porsche.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/mc-laren.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/kawasaki-z1000.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/bmw-s1000rr.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+            </div>
+            <div class="menu-right-all">
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/durex.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/asurs.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/television.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/mouse.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+            </div>
+            <div class="menu-right-all">
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/versace.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/supreme.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/chanel.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/gucci.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+            </div>
+            <div class="menu-right-all">
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/louis-vuitton.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/nike.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/mustang.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/mercedes.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+            </div>
+            <div class="menu-right-all">
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/porsche.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/mc-laren.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/kawasaki-z1000.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/bmw-s1000rr.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+            </div>
+            <div class="menu-right-all">
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/versace.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/supreme.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/chanel.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/gucci.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product Supreme x Ximer</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+            </div>
+            <div class="menu-right-all">
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/louis-vuitton.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/nike.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/mustang.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/mercedes.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+            </div>
+            <div class="menu-right-all">
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/porsche.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/mc-laren.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/kawasaki-z1000.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+                <div class="menu-right-content">
+                    <img src="assets/image/marketplace/bmw-s1000rr.jpg" alt="" class="menu-right-content-image">
+                    <div class="menu-right-content-price">9.600.000 ₫</div>
+                    <div class="menu-right-content-name-product">Product</div>
+                    <div class="menu-right-content-location">Thanh Xuân, Nguyễn Trãi, Hà Nội</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/3 marketplace.js"></script>
+</body>
+
+</html>

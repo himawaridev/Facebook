@@ -1,0 +1,268 @@
+#body {
+    margin: 0px !important;
+    /* background-color: #18191A; */
+    overflow-y: scroll;
+    background: #f0f2f5;
+}
+
+/**/
+.container-all {
+    display: flex;
+    margin: 80px 260px 0px 260px;
+    justify-content: space-between;
+}
+
+/**/
+.container-left {}
+
+.title-facebook {
+    margin: 0px 0px 0px -20px;
+}
+
+.title-facebook-image {
+    width: 200px;
+    height: auto;
+}
+
+.title-login-now {
+    color: #1c1e21;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.title-note {
+    color: #606770;
+    font-size: 15px;
+}
+
+.all-account {
+    display: flex;
+    margin: 30px 0px 0px 0px;
+}
+
+/**/
+.account {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #dddfe2;
+}
+
+.account-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.account-name {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    font-size: 18px;
+}
+
+.account-icon {
+    position: absolute;
+    inset: 255px 0px 0px 270px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.account-number {
+    position: absolute;
+    /* inset: 165px 1100px 520px 400px; */
+    inset: 245px 1095px 0px 400px;
+    width: 25px;
+    height: 30px;
+}
+
+.in-number {
+    color: #fff;
+    cursor: pointer;
+    background-color: #fa3e3e;
+    border-radius: 50px;
+    padding: 2px 5px 4px 5px;
+    font-size: 13px;
+}
+
+/**/
+
+.plus-account {
+    border-radius: 6px;
+    margin: 0px 0px 0px 20px;
+    width: 160px;
+    box-shadow: 0 0 0 1px #dddfe2;
+}
+
+.plus-account-icon {
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    padding: 50px;
+}
+
+.bi-plus-circle-fill {
+    font-size: 45px;
+    color: #1877f2;
+}
+
+
+.plush-account {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    color: #1877f2;
+    padding: 10px 0px 10px 0px;
+    font-size: 18px;
+    border-radius: 0px 0px 6px 6px;
+}
+
+/**/
+.container-right {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: 0 0 0 2px #dddfe2;
+    margin: 60px 0px 0px 0px;
+}
+
+.information {
+    margin: 15px 15px 15px 15px;
+}
+
+
+.input {
+    padding: 10px 20px 10px 20px;
+    width: 370px;
+    border-radius: 6px;
+    border: 0.1px solid #606770;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.input:focus {
+    outline-color: #1877f2;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    margin: 15px 15px 15px 15px;
+    padding: 10px 20px 10px 20px;
+    background-color: #1877f2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login:hover {
+    background-color: #1e6ed6;
+}
+
+.reset-pass {
+    display: flex;
+    justify-content: center;
+    margin: 15px 15px 15px 15px;
+    color: #1877f2;
+    padding: 5px 20px 15px 20px;
+    border-bottom: 1px solid #dadde1;
+    font-size: 14px;
+}
+
+.reset-pass:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.create-account {
+    display: flex;
+    justify-content: center;
+    margin: 40px 100px 15px 100px;
+    padding: 10px 20px 10px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    background-color: #42b72a;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.create-account:hover {
+    background-color: #40ac25;
+}
+
+/**/
+.create-page {
+    margin: 30px 260px 0px 860px;
+
+}
+
+.link-create-page {
+    color: black;
+    font-weight: 600;
+}
+
+.link-create-page:hover { 
+    color: black;
+}
+
+/**/
+.footer {
+    margin: 200px 0px 0px 0px ;
+    padding: 0px 260px 0px 260px;
+    background-color: white;
+    height: 190px;
+}
+
+.footer-title {
+    display: flex;
+    padding: 25px 0px 15px 0px;
+    border-bottom: 1px solid #606164;
+}
+
+.link-footer {
+    font-size: 13px;
+    margin: 0px 20px 0px 0px;
+    color: #606164;
+}
+.footer-menu {}
+
+.footer-menu-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0px 2px 0px;
+}
+
+.footer-menu-link {
+    font-size: 12px;
+    margin: 0px 10px 0px 0px;
+    color: #606164;
+}
+
+.footer-write {
+    font-size: 12px;
+    color: #606164;
+    margin: 20px 0px 0px 0px;
+}
+
+
+
+
+
+/**/
+/**/
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
